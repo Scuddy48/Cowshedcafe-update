@@ -8,3 +8,4 @@ Contact Page
 Gallery / Blog 
 Order Online 
 ...hopefully! :)
+so i have the basic layout of my web page and a simple menu in place.
