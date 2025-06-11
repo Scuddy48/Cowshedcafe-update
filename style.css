@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar{
+  background-color: #5D3A00;
+  color: #ddd;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links li{
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.nav-links a{
+  color: #ddd;
+  text-decoration: none;
+  font-weight: bold;
+}
+.nav-links a:hover{
+  color: #f7c325;
+}
+
+/* Apply basic body styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+  padding: 0 1rem;
+}
+
+
+/* Container to center content */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 1rem;
+}
+
+/* Header & Navigation Styles */
+header {
+  background-color: #5D3A00; /* Dark brown */
+  color: white;
+  padding: 1rem 0;
+}
+
+header h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #f7c325; /* Light highlight on hover */
+}
+
+/* Main Content */
+main {
+  padding: 2rem 0;
+}
+
+main h2 {
+  margin-bottom: 1rem;
+  color: #5D3A00;
+}
+
+/* Menu item styling */
+section {
+  margin-bottom: 2rem;
+}
+
+article {
+  margin-bottom: 1rem;
+}
+
+article h4 {
+  margin-bottom: 0.25rem;
+}
+
+.price {
+  font-weight: bold;
+  color: #5D3A00;
+}
+
+/* Footer */
+footer {
+  background-color: #eee;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+/* Address styling */
+address {
+  font-style: normal;
+  line-height: 1.8;
+}
+/* Menu Section Layout */
+.menu-section{
+  margin-bottom: 2rem;
+}
+
+.menu-items{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.menu-card{
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 250px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease;
+}
+
+.menu-card:hover{
+  transform: translateY(-5px);
+}
+.menu-card h4{
+  margin-bottom: 0.5rem;
+  color: #5D3A00;
+}
+
+.menu-card p{
+  margin-bottom: 0.5rem;
+}
+
+.menu-card .price{
+  font-weight: bold;
+  color: #5D3A00;
+}
+
+

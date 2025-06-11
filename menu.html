@@ -3,21 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Cowshed Cafe</title>
+    <title>The Cowshed Cafe.</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+  
     <!--Header and Navigation-->
-    <header>
+    <header class="navbar">
+      <div class="container flex"
       <h1>☕ The Cowshed Cafe</h1>
 
       <nav>
-        <ul>
+        <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
-          <li><a href="#">Menu</a></li>
+          <li><a href="menu.html">Menu</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+    </div>
     </header>
     <!--Main Content-->
     <main>
@@ -28,44 +32,46 @@
       </p>
 
       <!--Coffee Section-->
-      <section>
+        <section class="menu-section">
         <h3>Coffee</h3>
+        <div class="menu-items">
 
-        <article>
+        <article class="menu-card">
           <h4>Espresso</h4>
           <p>Astrong and rich shot of pure coffee.</p>
           <p class="price">£2.50</p>
         </article>
 
-        <article>
+        <article class="menu-card">
           <h4>Latte</h4>
           <p>Espresso with steamed milk and foam.</p>
           <p class="price">£4.00</p>
         </article>
 
-        <article>
+        <article class="menu-card">
           <h4>Cappuccino</h4>
           <p>Equal parts espresso, steamed milk and foam.</p>
           <p class="price">£4.00</p>
         </article>
 
-        <article>
+        <article class="menu-card">
           <h4>Iced Coffee</h4>
           <p>Smooth cold coffee poured over crushed ice.</p>
           <p class="price">£3.50</p>
         </article>
 
         <!--Drinks Section-->
-        <section>
+        <section class="menu-section">
           <h3>Drinks</h3>
+          <div class="menu-items">
 
-          <article>
+          <article class="menu-card">
             <h4>Green Tea</h4>
             <p>Freshly brewed green tea served hot of iced.</p>
             <p class="price">£2.00</p>
           </article>
 
-          <article>
+          <article class="menu-card">
             <h4>Smoothie of the day</h4>
             <p>
               Daily fresh fruit blend made with yogurt or if you like a vegan
@@ -74,7 +80,7 @@
             <p class="price">£5.00</p>
           </article>
 
-          <article>
+          <article class="menu-card">
             <h4>Fruit Juice</h4>
             <p>Orange, apple or mixed berry juice.</p>
             <p class="price">£3.00</p>
@@ -83,26 +89,47 @@
       </section>
 
       <!--Snacks Section-->
-      <section>
+      <section class="menu-section">
         <h3>Snacks</h3>
+        <div class="menu-items">
 
-        <article>
+        <article class="menu-card">
           <h4>Blueberry Muffin</h4>
           <p>Freshly baked daily with real blueberries.</p>
           <p class="price">£2.50</p>
         </article>
 
-        <article>
+        <article class="menu-card">
           <h4>Avocado on Toast</h4>
           <p>Toasted sourdough with smashed avocado and herbs.</p>
           <p class="price">£5.50</p>
         </article>
 
-        <article>
+        <article class="menu-card">
           <h4>Chocolate Croissant</h4>
           <p>Flacky and buttery with a beautiful chocolate filling.</p>
           <p class="price">£3.00</p>
         </article>
+
+        <article class="menu-card">
+          <h4>Scone with Jam and Cream</h4>
+          <p>Traditional British scone served warm with clotted cream and strawberry jam.</p>
+          <p class="price">£3.50</p>
+        </article>
+
+        <article class="menu-card">
+          <h4>Toasted Pannini.</h4>
+          <p>Choose from ham and cheese, pesto and mozzarella or vegitarian options.</p>
+          <p class="price">£4.50</p>
+        </article>
+
+        <article class="menu-card">
+          <h4>Biscotti</h4>
+          <p>Crunchy Italian almond biscuit — perfect with coffee.</p>
+          <p class="price">£1.50</p>
+        </article>
+      </div>
+      </div>
       </section>
     </main>
   </body>
