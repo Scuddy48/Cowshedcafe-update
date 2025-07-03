@@ -9,10 +9,6 @@
   background-color: #5D3A00;
   color: #ddd;
   padding: 1rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .nav-links li{
@@ -28,6 +24,84 @@
 .nav-links a:hover{
   color: #f7c325;
 }
+
+/*Base styles for the page*/
+.navbar{
+  background-color: #5D3A00;
+  color: #ddd;
+  padding: 1rem 0;
+}
+
+.navbar h1 {
+  margin: 0;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links a {
+  color: #ddd;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #f7c325; /* Light highlight on hover */
+}
+
+hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: #ddd;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {}
+.flex {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hamburger {
+  display: block;
+  mqrgin-left: auto;
+}
+
+.nav-menu {
+  width: 100%;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+}
+
+.nav-menu.active {
+  max-height: 300px; /* Adjust as needed */
+}
+
+.nav-links{
+  flex-direction: column;
+  padding: 1rem 1rem o.5rem;
+  background-color: #5D3A00;
+}
+
+.nav-links li {
+  margin-bottom: 0.5rem 0;
+}
+
+
+
+
+
+
 
 /* Apply basic body styles */
 body {
@@ -107,6 +181,7 @@ article h4 {
   color: #5D3A00;
 }
 
+/* Base navigation styles */
 /* Footer */
 footer {
   background-color: #eee;
