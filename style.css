@@ -4,37 +4,17 @@
   box-sizing: border-box;
 }
 
-/* Navbar */
-.navbar{
+/* Base Nav Styles */
+.navbar {
   background-color: #5D3A00;
-  color: #ddd;
-  padding: 1rem 0;
-}
-
-.nav-links li{
-  display: inline-block;
-  margin-left: 20px;
-}
-
-.nav-links a{
-  color: #ddd;
-  text-decoration: none;
-  font-weight: bold;
-}
-.nav-links a:hover{
-  color: #f7c325;
-}
-
-/*Base styles for the page*/
-.navbar{
-  background-color: #5D3A00;
-  color: #ddd;
+  color: white;
   padding: 1rem 0;
 }
 
 .navbar h1 {
   margin: 0;
 }
+
 .nav-links {
   list-style: none;
   display: flex;
@@ -46,62 +26,58 @@
 }
 
 .nav-links a {
-  color: #ddd;
+  color: white;
   text-decoration: none;
   font-weight: bold;
 }
 
 .nav-links a:hover {
-  color: #f7c325; /* Light highlight on hover */
+  color: #f7c325;
 }
 
-hamburger {
+.hamburger {
   display: none;
   background: none;
   border: none;
-  color: #ddd;
+  color: white;
   font-size: 1.5rem;
   cursor: pointer;
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {}
-.flex {
-  flex-direction: column;
-  align-items: flex-start;
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hamburger {
+    display: block;
+    margin-left: auto;
+    margin-top: -2rem; /* Adjust positioning if needed */
+  }
+
+  .nav-menu {
+    width: 100%;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+  }
+
+  .nav-menu.active {
+    max-height: 300px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #4A2F00;
+  }
+
+  .nav-links li {
+    margin-bottom: 0.75rem;
+  }
 }
-
-.hamburger {
-  display: block;
-  mqrgin-left: auto;
-}
-
-.nav-menu {
-  width: 100%;
-  overflow: hidden;
-  max-height: 0;
-  transition: max-height 0.3s ease-out;
-}
-
-.nav-menu.active {
-  max-height: 300px; /* Adjust as needed */
-}
-
-.nav-links{
-  flex-direction: column;
-  padding: 1rem 1rem o.5rem;
-  background-color: #5D3A00;
-}
-
-.nav-links li {
-  margin-bottom: 0.5rem 0;
-}
-
-
-
-
-
-
 
 /* Apply basic body styles */
 body {
@@ -180,6 +156,55 @@ article h4 {
   font-weight: bold;
   color: #5D3A00;
 }
+
+/*Cart Styles*/
+.cart {
+  background-color: #fff;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 2rem;
+  max-width: 600px;
+}
+
+.cart h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#cart-items {
+  list-style: none;
+  padding-left: 0;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-item button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.quantity-controls input {
+  width: 30px;
+  text-align: center;
+}
+
 
 /* Base navigation styles */
 /* Footer */
