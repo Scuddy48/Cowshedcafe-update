@@ -1,7 +1,50 @@
-* {
+ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* Base body styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  animation: fadeIn 1s ease-in-out;
+  color: #333; /* Ensure text is visible */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Semi-transparent overlay */
+.page-wrapper {
+  background-color: rgba(245, 242, 242, 0.7); /* White with slight transparency */
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+/* Page-specific backgrounds */
+.home-page {
+  background-image: url('pexels-isa-nurrosid-216198809-11851378.jpg');
+}
+
+.menu-page {
+  background-image: url('/Users/test/Desktop/cafe project/images/pexels-nguy-n-ti-n-th-nh-2150376175-32823309.jpg');
+}
+
+.about-page {
+  background-image: url('/Users/test/Desktop/cafe project/images/pexels-sam-lion-5710187.jpg');
+}
+
+.contact-page {
+  background-image: url('/Users/test/Desktop/cafe project/images/pexels-tim-douglas-6205767 (1).jpg');
 }
 
 /* Base Nav Styles */
@@ -79,16 +122,6 @@
   }
 }
 
-/* Apply basic body styles */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  background-color: #fff;
-  color: #333;
-  padding: 0 1rem;
-}
-
-
 /* Container to center content */
 .container {
   max-width: 1000px;
@@ -157,7 +190,7 @@ article h4 {
   color: #5D3A00;
 }
 
-/*Cart Styles*/
+/* Cart Styles */
 .cart {
   background-color: #fff;
   padding: 1rem;
@@ -205,8 +238,6 @@ article h4 {
   text-align: center;
 }
 
-
-/* Base navigation styles */
 /* Footer */
 footer {
   background-color: #eee;
@@ -220,19 +251,20 @@ address {
   font-style: normal;
   line-height: 1.8;
 }
+
 /* Menu Section Layout */
-.menu-section{
+.menu-section {
   margin-bottom: 2rem;
 }
 
-.menu-items{
+.menu-items {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
   justify-content: center;
 }
 
-.menu-card{
+.menu-card {
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -242,21 +274,21 @@ address {
   transition: transform 0.2s ease;
 }
 
-.menu-card:hover{
+.menu-card:hover {
   transform: translateY(-5px);
 }
-.menu-card h4{
+
+.menu-card h4 {
   margin-bottom: 0.5rem;
   color: #5D3A00;
 }
 
-.menu-card p{
+.menu-card p {
   margin-bottom: 0.5rem;
 }
 
-.menu-card .price{
+.menu-card .price {
   font-weight: bold;
   color: #5D3A00;
 }
-
 

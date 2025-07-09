@@ -3,49 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Cowshed Cafe.</title>
-    <link rel="stylesheet" href="style.css">
+    <title>The Cowshed Cafe</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-  
-    <!-- Header and Navigation-->
+  <body class="home-page">
+    <div class="page-wrapper">
+      <!-- Header -->
+      <header class="navbar">
+        <div class="container flex">
+          <h1>☕ The Cowshed Cafe</h1>
 
-    <header class="navbar">
-  <div class="container flex">
-    <h1>☕ The Cowshed Cafe</h1>
+          <button class="hamburger" id="hamburger">☰</button>
 
-    <button class="hamburger" id="hamburger">
-      ☰
-    </button>
+          <nav class="nav-menu" id="navMenu">
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
 
-    <nav class="nav-menu" id="navMenu">
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+      <!-- Main Content -->
+      <main>
+        <!-- Hero Section -->
+        <section>
+          <h2>Great coffee, Better atmosphere</h2>
+          <p>
+            Welcome to The Cowshed Cafe. We are a small local cafe serving
+            quality coffee and homemade treats.
+          </p>
+        </section>
 
-    <!--Hero Section-->
-    <section>
-      <h2>Great coffee, Better atmosphere</h2>
-      <p>
-        Welcome to The Cowshed Cafe. We are a small local cafe serving quality coffee and homemade treats. 
-      </p>
-      <!--About Section-->
-      <section>
-        <h2>About Us</h2>
-        <p>We pride ourselves with sourcing our produce locally, come relax, read a book, or work in our
-        comfortable homely enviroment. </p>
-      <a href="#">Learn More</a>
-    </section>
-    <!--Footer-->
-    <footer>
-      <p>copyright 2025 The Cowshed Cafe. All rights reserved.</p>
-    </footer>
-    <script src="js/main.js"></script>
+        <!-- About Section -->
+        <section>
+          <h2>About Us</h2>
+          <p>
+            We pride ourselves with sourcing our produce locally, come relax,
+            read a book, or work in our comfortable homely environment.
+          </p>
+          <a href="#">Learn More</a>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        <p>Copyright 2025 The Cowshed Cafe. All rights reserved.</p>
+      </footer>
+
+      <script src="main.js"></script>
+    </div>
   </body>
 </html>
