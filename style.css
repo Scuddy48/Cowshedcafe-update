@@ -14,10 +14,13 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  color: #f8f8f8;
+  font-size: 16px;
+  background-color: #7c5609;
 }
 
 .page-wrapper {
-  background-color: rgba(255, 255, 255, 0.7); /* White overlay */
+  background-color: rgba(23, 22, 22, 0.7); 
   min-height: 100vh;
   padding: 2rem 0;
 }
@@ -25,26 +28,30 @@ body {
 /* Page-specific backgrounds */
 .home-page .page-wrapper {
   background-image: url('images/cafe2.jpg');
-  background-size: cover; /* Ensures the image covers the entire container */
-  background-position: center; /* Centers the image */
+  background-size: cover;
+  background-position: center;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .menu-page .page-wrapper {
-  background-image: url('images/cafe4.jpg');
+  background-image: url('images/cafe5.jpg');
   background-size: cover;
   background-position: center;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .about-page .page-wrapper {
   background-image: url('images/cafe5.jpg');
   background-size: cover;
   background-position: center;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .contact-page .page-wrapper {
   background-image: url('images/cafe6.jpg');
   background-size: cover;
   background-position: center;
+  animation: fadeIn 1s ease-in-out;
 }
 
 @keyframes fadeIn {
@@ -61,12 +68,19 @@ body {
 
 .navbar h1 {
   margin: 0;
+  font-size: 3rem;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
   gap: 1rem;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
 }
 
 .nav-links li {
@@ -80,7 +94,9 @@ body {
 }
 
 .nav-links a:hover {
-  color: #f7c325;
+  color: #ebb30b;
+  transition: color 0.5s ease;
+  
 }
 
 .hamburger {
@@ -102,7 +118,9 @@ body {
   .hamburger {
     display: block;
     margin-left: auto;
-    margin-top: -2rem; /* Adjust positioning if needed */
+    margin-top: 0; /* Adjust positioning if needed */
+    margin-bottom: 1rem; 
+
   }
 
   .nav-menu {
@@ -136,7 +154,7 @@ body {
 
 /* Header & Navigation Styles */
 header {
-  background-color: #5D3A00; /* Dark brown */
+  background-color: #5D3A00;
   color: white;
   padding: 1rem 0;
 }
@@ -164,26 +182,46 @@ nav a {
 }
 
 nav a:hover {
-  color: #f7c325; /* Light highlight on hover */
+  color: #f7c325;
 }
 
 /* Main Content */
 main {
   padding: 2rem 0;
+
 }
 
 main h2 {
   margin-bottom: 1rem;
-  color: #f0eeea;
+  color: #704c03;
+  text-align: center;
+  font-size: 2.5rem;
+  
 }
+
+main p {
+  margin-bottom: 1.5rem;
+  color: #655303;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
 
 /* Menu item styling */
 section {
   margin-bottom: 2rem;
+  color: #ffffff;
+  text-align: center;
 }
 
 article {
   margin-bottom: 1rem;
+}
+
+article h3 {
+  margin-bottom: 0.5rem;
+  color: #f0eeea;
 }
 
 article h4 {
@@ -197,17 +235,26 @@ article h4 {
 
 /* Cart Styles */
 .cart {
-  background-color: #fff;
+  background-color: #5D3A00;
   padding: 1rem;
   border: 1px solid #ddd;
   border-radius: 8px;
   margin-top: 2rem;
   max-width: 600px;
+  margin: auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .cart h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  color: #5D3A00;
+}
+
+
+.cart p {
+  margin-bottom: 1rem;
+  color: #f0eeea; 
 }
 
 #cart-items {
@@ -220,12 +267,12 @@ article h4 {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #fefefc;
 }
 
 .cart-item button {
-  background: red;
-  color: white;
+  background: rgb(240, 240, 240);
+  color: #5D3A00;
   border: none;
   padding: 0.25rem 0.5rem;
   cursor: pointer;
@@ -245,7 +292,7 @@ article h4 {
 
 /* Footer */
 footer {
-  background-color: #eee;
+  background-color: #5D3A00;
   text-align: center;
   padding: 1rem 0;
   font-size: 0.9rem;
