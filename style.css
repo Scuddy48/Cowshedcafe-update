@@ -166,6 +166,7 @@ a:hover {
     display: block;
     margin-left: auto;
     margin-top: -2rem;
+
   }
 
   .nav-menu {
@@ -182,7 +183,7 @@ a:hover {
   .nav-links {
     flex-direction: column;
     padding: 1rem;
-    background-color: #4A2F00;
+    background-color: #403f3c;
     text-align: center; 
   }
 
@@ -201,23 +202,23 @@ footer {
 
 .add-to-cart {
   display: inline-block;
-  padding: 0.8rem 2rem; /* Slightly larger padding for emphasis */
+  padding: 0.8rem 2rem; 
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
-  text-transform: uppercase; /* All caps for impact */
-  color: white; /* White text for contrast */
-  background: linear-gradient(135deg, #f7c325, #ff6f61); /* Gradient for vibrancy */
-  border: none; /* Remove default border */
-  border-radius: 30px; /* Rounded corners for a modern look */
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-  cursor: pointer; /* Pointer cursor for interactivity */
-  transition: all 0.3s ease; /* Smooth transitions for hover effects */
+  text-transform: uppercase; 
+  color: white; 
+  background: linear-gradient(135deg, #f7c325, #ff6f61); 
+  border: none; 
+  border-radius: 30px; 
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+  cursor: pointer; 
+  transition: all 0.3s ease; 
 }
 
 .add-to-cart:hover {
-  transform: scale(1.05); /* Slight scaling effect on hover */
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
-  background: linear-gradient(135deg, #ff6f61, #f7c325); /* Reverse gradient for dynamic effect */
+  transform: scale(1.05); 
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); 
+  background: linear-gradient(135deg, #ff6f61, #f7c325); 
 }
 
 #cart {
@@ -226,19 +227,37 @@ footer {
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+ 
 }
+
+#cart li {
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff; 
+  margin-bottom: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.1); 
+  padding: 0.5rem; 
+  list-style: none;
+  text-align: center; 
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);  
+  border-radius: 30px; 
+
+} 
 
 #cart h2 {
   font-family: 'Dancing Script', cursive;
   font-size: 2rem;
-  color: white;
+  color: rgb(236, 235, 235);
   margin-bottom: 1rem;
+  border-radius: 30px;
+  padding: 0.5rem;
+  background-color: rgba(3, 1, 1, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 #cart-items {
    display: inline-block;
   padding: 0.75rem 1.5rem;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(226, 223, 223, 0.1);
   color: rgb(255, 255, 255);
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
@@ -254,9 +273,10 @@ footer {
   font-family: 'Poppins', sans-serif;
   color: #ffffff; 
   margin-bottom: 0.5rem;
-  background-color: transparent !important; 
+  background-color: transparent; 
   padding: 0; 
-  list-style: none; 
+  list-style: none;
+  text-align: center; 
 }
 
 #cart p {
@@ -265,12 +285,12 @@ footer {
   color: #f7ca00;
   margin: 0;
   text-align: center;
-  background-color: transparent !important;
+  background-color: transparent;
 }
 
 #cart-total {
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   color: #f7c325;
-  background-color: transparent !important;
+  background-color: transparent;
 }
