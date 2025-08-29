@@ -4,14 +4,13 @@
   box-sizing: border-box;
 }
 
-<<<<<<< HEAD
-body {
-  font-family: 'Poppins', sans-serif;
-=======
+:root(
+  
+)
+
 /* Base body styles */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
->>>>>>> other-repo/main
   line-height: 1.6;
   margin: 0;
   padding: 0;
@@ -19,111 +18,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-<<<<<<< HEAD
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.page-wrapper {
-  position: relative; 
-  display: flex;
-  flex-direction: column;
-  justify-content: center; 
-  align-items: center; 
-  text-align: center; 
-  min-height: 100vh;
-  padding-top: 6rem; 
-  padding-bottom: 2rem;
-}
-
-.home-page .page-wrapper {
-  background-image: url('images/cowshed cafe.jpeg');
-  background-size: cover;
-  background-position: center;
-}
-
-.menu-page .page-wrapper {
-  background-image: url('images/cowshed cafe.jpeg');
-  background-size: cover;
-  background-position: center;
-}
-
-.about-page .page-wrapper {
-  background-image: url('images/cowshed cafe.jpeg');
-  background-size: cover;
-  background-position: center;
-}
-
-.contact-page .page-wrapper {
-  background-image: url('images/cowshed cafe.jpeg');
-  background-size: cover;
-  background-position: center;
-}
-
-.page-wrapper::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4); 
-  z-index: 1; 
-  pointer-events: none; 
-}
-
-.page-wrapper > * {
-  position: relative;
-  z-index: 2; 
-}
-
-main {
-  width: 100%; 
-  max-width: 800px; 
-  margin: 0 auto; 
-  padding: 2rem; 
-  border-radius: 10px; 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
-  color: #ffffff; 
-  text-align: center; 
-}
-
-h2 {
-  font-family: 'Dancing Script', cursive;
-  font-weight: 700;
-  font-size: 2.5rem;
-  color: #ffffff;
-  margin-bottom: 1rem;
-  letter-spacing: 0.05rem;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-}
-
-p {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  color: #f0f0f0;
-}
-
-a {
-  color: #f7c325; 
-  text-decoration: none;
-}
-
-a:hover {
-  color: #ffffff; 
-}
-
-.navbar {
-  position: fixed; 
-  top: 0; 
-  left: 0; 
-  width: 100%; 
-  background-color: #726e66; 
-  color: white;
-  padding: 1rem 0;
-  z-index: 10; 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-=======
   color: #f8f8f8;
   font-size: 16px;
   background-color: #7c5609;
@@ -181,21 +75,16 @@ a:hover {
   font-size: 3rem;
   text-align: center;
   animation: fadeIn 1s ease-in-out;
->>>>>>> other-repo/main
 }
 
 .nav-links {
   list-style: none;
   display: flex;
   gap: 1rem;
-<<<<<<< HEAD
-  justify-content: center; 
-=======
   justify-content: center;
   margin: 0;
   padding: 0;
   font-size: 20px;
->>>>>>> other-repo/main
 }
 
 .nav-links li {
@@ -203,23 +92,6 @@ a:hover {
 }
 
 .nav-links a {
-<<<<<<< HEAD
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background-color: rgba(255, 255, 255, 0.1);
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 25px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.nav-links a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  transform: scale(1.05);
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-=======
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -229,7 +101,6 @@ a:hover {
   color: #ebb30b;
   transition: color 0.5s ease;
   
->>>>>>> other-repo/main
 }
 
 .hamburger {
@@ -241,10 +112,7 @@ a:hover {
   cursor: pointer;
 }
 
-<<<<<<< HEAD
-=======
 /* Responsive Styles */
->>>>>>> other-repo/main
 @media (max-width: 768px) {
   .flex {
     flex-direction: column;
@@ -254,13 +122,9 @@ a:hover {
   .hamburger {
     display: block;
     margin-left: auto;
-<<<<<<< HEAD
-    margin-top: -2rem;
-=======
     margin-top: 0; /* Adjust positioning if needed */
     margin-bottom: 1rem; 
 
->>>>>>> other-repo/main
   }
 
   .nav-menu {
@@ -278,10 +142,6 @@ a:hover {
     flex-direction: column;
     padding: 1rem;
     background-color: #4A2F00;
-<<<<<<< HEAD
-    text-align: center; 
-=======
->>>>>>> other-repo/main
   }
 
   .nav-links li {
@@ -289,11 +149,6 @@ a:hover {
   }
 }
 
-<<<<<<< HEAD
-footer {
-  background-color: transparent; 
-  color: #f0f0f0; 
-=======
 /* Container to center content */
 .container {
   max-width: 1000px;
@@ -442,89 +297,11 @@ article h4 {
 /* Footer */
 footer {
   background-color: #5D3A00;
->>>>>>> other-repo/main
   text-align: center;
   padding: 1rem 0;
   font-size: 0.9rem;
 }
 
-<<<<<<< HEAD
-.add-to-cart {
-  display: inline-block;
-  padding: 0.8rem 2rem; /* Slightly larger padding for emphasis */
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  text-transform: uppercase; /* All caps for impact */
-  color: white; /* White text for contrast */
-  background: linear-gradient(135deg, #f7c325, #ff6f61); /* Gradient for vibrancy */
-  border: none; /* Remove default border */
-  border-radius: 30px; /* Rounded corners for a modern look */
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-  cursor: pointer; /* Pointer cursor for interactivity */
-  transition: all 0.3s ease; /* Smooth transitions for hover effects */
-}
-
-.add-to-cart:hover {
-  transform: scale(1.05); /* Slight scaling effect on hover */
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
-  background: linear-gradient(135deg, #ff6f61, #f7c325); /* Reverse gradient for dynamic effect */
-}
-
-#cart {
-  margin-top: 2rem;
-  padding: 1.5rem;
-  background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-#cart h2 {
-  font-family: 'Dancing Script', cursive;
-  font-size: 2rem;
-  color: white;
-  margin-bottom: 1rem;
-}
-
-#cart-items {
-   display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background-color: rgba(255, 255, 255, 0.1);
-  color: rgb(255, 255, 255);
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 25px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#cart-items li {
-  font-family: 'Poppins', sans-serif;
-  color: #ffffff; 
-  margin-bottom: 0.5rem;
-  background-color: transparent !important; 
-  padding: 0; 
-  list-style: none; 
-}
-
-#cart p {
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  color: #f7ca00;
-  margin: 0;
-  text-align: center;
-  background-color: transparent !important;
-}
-
-#cart-total {
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  color: #f7c325;
-  background-color: transparent !important;
-}
-=======
 /* Address styling */
 address {
   font-style: normal;
@@ -570,4 +347,3 @@ address {
   font-weight: bold;
   color: #5D3A00;
 }
->>>>>>> other-repo/main
