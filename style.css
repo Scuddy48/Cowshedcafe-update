@@ -4,8 +4,14 @@
   box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 body {
   font-family: 'Poppins', sans-serif;
+=======
+/* Base body styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+>>>>>>> other-repo/main
   line-height: 1.6;
   margin: 0;
   padding: 0;
@@ -13,6 +19,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+<<<<<<< HEAD
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -116,13 +123,79 @@ a:hover {
   padding: 1rem 0;
   z-index: 10; 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+=======
+  color: #f8f8f8;
+  font-size: 16px;
+  background-color: #7c5609;
+}
+
+.page-wrapper {
+  background-color: rgba(23, 22, 22, 0.7); 
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+/* Page-specific backgrounds */
+.home-page .page-wrapper {
+  background-image: url('images/cafe2.jpg');
+  background-size: cover;
+  background-position: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.menu-page .page-wrapper {
+  background-image: url('images/cafe5.jpg');
+  background-size: cover;
+  background-position: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.about-page .page-wrapper {
+  background-image: url('images/cafe5.jpg');
+  background-size: cover;
+  background-position: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.contact-page .page-wrapper {
+  background-image: url('images/cafe6.jpg');
+  background-size: cover;
+  background-position: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Base Nav Styles */
+.navbar {
+  background-color: #5D3A00;
+  color: white;
+  padding: 1rem 0;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 3rem;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+>>>>>>> other-repo/main
 }
 
 .nav-links {
   list-style: none;
   display: flex;
   gap: 1rem;
+<<<<<<< HEAD
   justify-content: center; 
+=======
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+>>>>>>> other-repo/main
 }
 
 .nav-links li {
@@ -130,6 +203,7 @@ a:hover {
 }
 
 .nav-links a {
+<<<<<<< HEAD
   display: inline-block;
   padding: 0.75rem 1.5rem;
   background-color: rgba(255, 255, 255, 0.1);
@@ -145,6 +219,17 @@ a:hover {
   background-color: rgba(255, 255, 255, 0.2);
   transform: scale(1.05);
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+=======
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #ebb30b;
+  transition: color 0.5s ease;
+  
+>>>>>>> other-repo/main
 }
 
 .hamburger {
@@ -156,6 +241,10 @@ a:hover {
   cursor: pointer;
 }
 
+<<<<<<< HEAD
+=======
+/* Responsive Styles */
+>>>>>>> other-repo/main
 @media (max-width: 768px) {
   .flex {
     flex-direction: column;
@@ -165,7 +254,13 @@ a:hover {
   .hamburger {
     display: block;
     margin-left: auto;
+<<<<<<< HEAD
     margin-top: -2rem;
+=======
+    margin-top: 0; /* Adjust positioning if needed */
+    margin-bottom: 1rem; 
+
+>>>>>>> other-repo/main
   }
 
   .nav-menu {
@@ -183,7 +278,10 @@ a:hover {
     flex-direction: column;
     padding: 1rem;
     background-color: #4A2F00;
+<<<<<<< HEAD
     text-align: center; 
+=======
+>>>>>>> other-repo/main
   }
 
   .nav-links li {
@@ -191,14 +289,166 @@ a:hover {
   }
 }
 
+<<<<<<< HEAD
 footer {
   background-color: transparent; 
   color: #f0f0f0; 
+=======
+/* Container to center content */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 1rem;
+}
+
+/* Header & Navigation Styles */
+header {
+  background-color: #5D3A00;
+  color: white;
+  padding: 1rem 0;
+}
+
+header h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #f7c325;
+}
+
+/* Main Content */
+main {
+  padding: 2rem 0;
+
+}
+
+main h2 {
+  margin-bottom: 1rem;
+  color: #704c03;
+  text-align: center;
+  font-size: 2.5rem;
+  
+}
+
+main p {
+  margin-bottom: 1.5rem;
+  color: #655303;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+
+/* Menu item styling */
+section {
+  margin-bottom: 2rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+article {
+  margin-bottom: 1rem;
+}
+
+article h3 {
+  margin-bottom: 0.5rem;
+  color: #f0eeea;
+}
+
+article h4 {
+  margin-bottom: 0.25rem;
+}
+
+.price {
+  font-weight: bold;
+  color: #5D3A00;
+}
+
+/* Cart Styles */
+.cart {
+  background-color: #5D3A00;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 2rem;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cart h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #5D3A00;
+}
+
+
+.cart p {
+  margin-bottom: 1rem;
+  color: #f0eeea; 
+}
+
+#cart-items {
+  list-style: none;
+  padding-left: 0;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #fefefc;
+}
+
+.cart-item button {
+  background: rgb(240, 240, 240);
+  color: #5D3A00;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.quantity-controls input {
+  width: 30px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: #5D3A00;
+>>>>>>> other-repo/main
   text-align: center;
   padding: 1rem 0;
   font-size: 0.9rem;
 }
 
+<<<<<<< HEAD
 .add-to-cart {
   display: inline-block;
   padding: 0.8rem 2rem; /* Slightly larger padding for emphasis */
@@ -274,3 +524,50 @@ footer {
   color: #f7c325;
   background-color: transparent !important;
 }
+=======
+/* Address styling */
+address {
+  font-style: normal;
+  line-height: 1.8;
+}
+
+/* Menu Section Layout */
+.menu-section {
+  margin-bottom: 2rem;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.menu-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 250px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+}
+
+.menu-card h4 {
+  margin-bottom: 0.5rem;
+  color: #5D3A00;
+}
+
+.menu-card p {
+  margin-bottom: 0.5rem;
+}
+
+.menu-card .price {
+  font-weight: bold;
+  color: #5D3A00;
+}
+>>>>>>> other-repo/main
