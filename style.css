@@ -195,6 +195,12 @@ nav li {
   background: linear-gradient(135deg, #ff6f61, #f7c325); 
 }
 
+.remove-item {
+  color:#ec6708;
+
+}
+
+
 #cart {
   margin-top: 2rem;
   padding: 0;
