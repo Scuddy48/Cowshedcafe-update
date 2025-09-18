@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (newQuantity > 0) {
           cartItems[index].quantity = newQuantity;
         } else {
-          cartItems.splice(index, 1); // Remove if 0
+          cartItems.splice(index, 1);
         }
         updateCart();
       });
